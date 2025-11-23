@@ -1,0 +1,17 @@
+{
+	"name": "file-manager",
+	"private": true,
+	"version": "0.0.1",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build"
+	},
+	"devDependencies": {
+		"vite": "^7.1.10"
+	},
+	"dependencies": {
+		"@preact/preset-vite": "^2.10.2",
+		"preact": "^10.27.2"
+	}
+}

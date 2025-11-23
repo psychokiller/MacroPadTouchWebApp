@@ -1,0 +1,19 @@
+{
+	"name": "wifi-scanner",
+	"private": true,
+	"version": "0.0.1",
+	"type": "module",
+	"scripts": {
+		"start": "vite",
+		"build:sta": "VITE_ENTRY_FILE=src/main.jsx VITE_OUTPUT_NAME=wifi_sta_bundle vite build",
+		"build:ap": "VITE_ENTRY_FILE=src/main_ap.jsx VITE_OUTPUT_NAME=main_ap vite build",
+		"build": "rm -rf dist && npm run build:sta && npm run build:ap"
+	},
+	"devDependencies": {
+		"vite": "^7.1.10"
+	},
+	"dependencies": {
+		"@preact/preset-vite": "^2.10.2",
+		"preact": "^10.27.2"
+	}
+}
