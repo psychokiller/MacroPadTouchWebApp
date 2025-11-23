@@ -76,7 +76,7 @@ export const FileManager = () => {
         <tbody>
           {files.map(file => (
             <tr key={file.name}>
-              <td><a href={`/${file.name}`} download={file.name}>{file.name}</a></td>
+              <td><a href={`/download?file=${file.name}`} download={file.name}>{file.name}</a></td>
               <td>{bytesToHumanReadable(file.size)}</td>
               <td>
                 <button class="action-button" onClick={() => handleDelete(file.name)}>Delete</button>
